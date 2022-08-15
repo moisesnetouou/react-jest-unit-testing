@@ -1,8 +1,20 @@
+import { useState } from "react";
+
 function App() {
+  const [list, setList] = useState(['Moises', 'Geo', 'Neto', 'Besourinha', 'Gaia', 'Tobias']);
+
+  function addToList(){
+    setList(state => [...state, 'Novo'])
+  }
+
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <button onClick={addToList}>Adicionar</button>
+      
+      <ul>
+        {list.map(item => <li key={item}>{item}</li>)}
+      </ul>
+    </>
   )
 }
 
