@@ -1,3 +1,8 @@
+import {render} from '@testing-library/react';
+import App from './App';
+
 test("sum", () => {
-  expect(1+1).toBe(2)
+  const {getByText} = render(<App />)
+
+  expect(getByText('Hello World')).toBeTruthy()
 })
