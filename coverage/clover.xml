@@ -1,40 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1660599054719" clover="3.2.0">
-  <project timestamp="1660599054719" name="All files">
-    <metrics statements="31" coveredstatements="31" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="4" elements="42" coveredelements="42" complexity="0" loc="31" ncloc="31" packages="1" files="1" classes="1"/>
+<coverage generated="1660600300116" clover="3.2.0">
+  <project timestamp="1660600300116" name="All files">
+    <metrics statements="40" coveredstatements="40" conditionals="12" coveredconditionals="12" methods="6" coveredmethods="6" elements="58" coveredelements="58" complexity="0" loc="40" ncloc="40" packages="1" files="1" classes="1"/>
     <file name="App.tsx" path="C:\Users\moises.neto\Documents\MeusProjetos\Recapitulando\react-unit-testing\src\App.tsx">
-      <metrics statements="31" coveredstatements="31" conditionals="7" coveredconditionals="7" methods="4" coveredmethods="4"/>
+      <metrics statements="40" coveredstatements="40" conditionals="12" coveredconditionals="12" methods="6" coveredmethods="6"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
-      <line num="3" count="7" type="cond" truecount="1" falsecount="0"/>
-      <line num="4" count="7" type="stmt"/>
-      <line num="5" count="7" type="stmt"/>
-      <line num="6" count="7" type="stmt"/>
-      <line num="7" count="7" type="cond" truecount="1" falsecount="0"/>
+      <line num="3" count="9" type="cond" truecount="1" falsecount="0"/>
+      <line num="4" count="9" type="stmt"/>
+      <line num="5" count="9" type="stmt"/>
+      <line num="6" count="9" type="stmt"/>
+      <line num="7" count="9" type="cond" truecount="1" falsecount="0"/>
       <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
       <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
       <line num="10" count="1" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
-      <line num="12" count="7" type="stmt"/>
-      <line num="13" count="7" type="stmt"/>
-      <line num="14" count="7" type="stmt"/>
-      <line num="15" count="7" type="stmt"/>
-      <line num="16" count="7" type="stmt"/>
-      <line num="17" count="7" type="stmt"/>
-      <line num="18" count="7" type="cond" truecount="1" falsecount="0"/>
-      <line num="19" count="7" type="stmt"/>
-      <line num="20" count="7" type="stmt"/>
-      <line num="21" count="7" type="stmt"/>
-      <line num="22" count="7" type="stmt"/>
-      <line num="23" count="7" type="stmt"/>
-      <line num="24" count="7" type="stmt"/>
-      <line num="25" count="7" type="cond" truecount="1" falsecount="0"/>
-      <line num="26" count="7" type="stmt"/>
-      <line num="27" count="7" type="stmt"/>
-      <line num="28" count="7" type="stmt"/>
-      <line num="29" count="7" type="stmt"/>
-      <line num="30" count="1" type="stmt"/>
-      <line num="31" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="12" count="9" type="stmt"/>
+      <line num="13" count="9" type="cond" truecount="1" falsecount="0"/>
+      <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="15" count="1" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="9" type="stmt"/>
+      <line num="19" count="9" type="stmt"/>
+      <line num="20" count="9" type="stmt"/>
+      <line num="21" count="9" type="stmt"/>
+      <line num="22" count="9" type="stmt"/>
+      <line num="23" count="9" type="stmt"/>
+      <line num="24" count="9" type="cond" truecount="1" falsecount="0"/>
+      <line num="25" count="9" type="stmt"/>
+      <line num="26" count="9" type="stmt"/>
+      <line num="27" count="9" type="stmt"/>
+      <line num="28" count="9" type="stmt"/>
+      <line num="29" count="9" type="stmt"/>
+      <line num="30" count="9" type="stmt"/>
+      <line num="31" count="9" type="cond" truecount="1" falsecount="0"/>
+      <line num="32" count="9" type="stmt"/>
+      <line num="33" count="9" type="cond" truecount="1" falsecount="0"/>
+      <line num="34" count="9" type="stmt"/>
+      <line num="35" count="9" type="stmt"/>
+      <line num="36" count="9" type="stmt"/>
+      <line num="37" count="9" type="stmt"/>
+      <line num="38" count="9" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+      <line num="40" count="1" type="cond" truecount="1" falsecount="0"/>
     </file>
   </project>
 </coverage>
