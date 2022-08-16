@@ -1,21 +1,27 @@
-import {render, waitFor, waitForElementToBeRemoved} from '@testing-library/react';
+import {render, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event'
-import App from './App';
+import {List} from './List';
 
-describe('App Component', () => {
-  it('should render list items', () => {
-    const { getByText } = render(<App />)
-
+describe('List Component', () => {
+  it('should render list items', async () => {
+    const { getByText, unmount, queryByText } = render(<List initialItems={['Moises', 'Geo', 'Neto', 'Besourinha', 'Gaia', 'Tobias']} />)
+    
     expect(getByText('Moises')).toBeInTheDocument()
     expect(getByText('Geo')).toBeInTheDocument()
     expect(getByText('Neto')).toBeInTheDocument()
     expect(getByText('Besourinha')).toBeInTheDocument()
     expect(getByText('Gaia')).toBeInTheDocument()
     expect(getByText('Tobias')).toBeInTheDocument()
+ 
+    unmount();
+    render(<List initialItems={['Florzinha']} />)
+  
+    expect(getByText('Florzinha')).toBeInTheDocument()
+    expect(queryByText('Neto')).not.toBeInTheDocument()
   });
 
   it('should be able to add new item to the list', async ()=> {
-    const { getByText,getByPlaceholderText } = render(<App />)
+    const { getByText,getByPlaceholderText } = render(<List initialItems={[]} />)
 
     const inputElement = getByPlaceholderText('Novo item');
     const addButton = getByText('Adicionar');
@@ -30,7 +36,7 @@ describe('App Component', () => {
   })
 
   it('should be able to add remove item to the list', async ()=> {
-    const { getByText,getAllByText, queryByText } = render(<App />)
+    const { getByText,getAllByText, queryByText } = render(<List initialItems={['Moises']} />)
 
     const addButton = getByText('Adicionar');
     const removeButtons = getAllByText('Remover');
